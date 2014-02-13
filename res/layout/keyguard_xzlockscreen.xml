@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+				
+		<com.spacecaker.xzlockscreen.PanelSwitcher
+			android:layout_width="fill_parent" 
+			android:layout_above="@+id/blindsview"
+			android:minHeight="400.0dp"
+			android:layout_height="wrap_content">   
+		 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="300.0dp"
+        android:background="@drawable/kg_bouncer_bg_white"
+        android:gravity="center_horizontal" >
+		
+		<com.spacecaker.xzlockscreen.Clock
+				android:id="@+id/clock"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:textColor="@android:color/white"
+				android:textSize="80sp"
+				android:shadowColor="#60000000"
+				android:shadowRadius="8"
+				android:shadowDx="8"
+				android:shadowDy="8"/>
+		<TextView
+				android:id="@+id/date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dip"
+				android:layout_below="@id/clock"
+				android:textColor="@android:color/white"
+				android:textSize="16sp"
+				android:shadowColor="#60000000"
+				android:shadowRadius="8"
+				android:shadowDx="8"
+				android:shadowDy="8"/>
+				
+    </LinearLayout>		 
+
+    <LinearLayout android:orientation="vertical" 
+        android:minHeight="300.0dp" 
+        android:background="@drawable/kg_bouncer_bg_white" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+    	<Button
+        	android:id="@+id/add"
+        	android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="24dp"
+        	android:background="@drawable/keyguard_add_widget_button" />
+    </LinearLayout>
+	
+		</com.spacecaker.xzlockscreen.PanelSwitcher>
+
+		<ImageView
+		    android:id="@+id/imageView2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="32dp"
+		    android:gravity="center_horizontal"
+		    android:src="@drawable/ic_lockscreen_handle" />
+			
+		<com.spacecaker.xzlockscreen.BlindsView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/blindsview"
+			android:layout_width="fill_parent"
+        	android:layout_alignParentBottom="true"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginBottom="32dp"			
+			android:layout_height="100.0dp" >			
+	</com.spacecaker.xzlockscreen.BlindsView>		
+</LinearLayout>

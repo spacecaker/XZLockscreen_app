@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="SpaceTheme" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>        
+    </style>
+
+    <style name="SpaceTheme.Locker" parent="SpaceTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@drawable/transparent</item>
+    </style>
+
+    <!-- Settings theme. -->
+    <style name="Space.Settings" parent="AppBaseTheme"></style>
+
+</resources>

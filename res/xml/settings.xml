@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="spacexz_locker_enabled"
+        android:summary="@string/settings_enable2"
+        android:title="@string/settings_enable" />
+
+    <PreferenceCategory
+        android:key="colors"
+        android:title="@string/lockscreen_options">
+			
+		<net.margaritov.preference.colorpicker.ColorPickerPreference
+			android:key="clockColor"
+			android:title="Set clock color"
+			android:summary="color"
+			android:defaultValue="@android:color/white" />
+
+    </PreferenceCategory>
+	
+    <PreferenceCategory android:title="@string/settings_category" >
+        <Preference
+            android:summary="SpaceCaker@XDA"
+            android:title="Developer Of The App:" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

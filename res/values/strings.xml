@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">SpaceLock</string>    
+    <string name="settings">SpaceLock</string>
+    <string name="settings_enable2">Replace default lockscreen with SpaceLock</string>
+    <string name="settings_enable">SpaceLock</string>
+    <string name="settings_category">About:</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#FF000000</string>
+    <string name="ics_color">Holo</string>
+    <string name="lockscreen_options">Lockscreen Options:</string>
+    <string name="set">Set</string>
+</resources>
